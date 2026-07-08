@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | นางสาวณัฐวดี เอกภักดี</title>
 
+<style>
+
+body{
+    margin:0;
+    font-family:"TH Sarabun New",Tahoma,sans-serif;
+    background:linear-gradient(135deg,#66ccff,#99ddff,#dff6ff);
+    text-align:center;
+}
+
+/* ดอกไม้ด้านบน */
+.flower{
+    font-size:35px;
+    margin-top:20px;
+}
+
+.card{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #4db8ff;
+    box-shadow:0 0 15px #66ccff;
+}
+
+h1{
+    color:#0066cc;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:26px;
+    color:#444;
+    margin:8px;
+}
+
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#0099ff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:22px;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#0066cc;
+    transform:scale(1.05);
+}
+
+footer{
+    margin-top:25px;
+    color:#0066cc;
+    font-size:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="flower">
+🌸 🌺 🌼 🌸 🌺
+</div>
+
+<div class="card">
+
+<img src="images/ตู้เสื้อผ้า 2.jpg" alt="รูปภาพ">
+
+<h1>นางสาวณัฐวดี เอกภักดี</h1>
+
+<p>🎓 นักเรียนชั้นมัธยมศึกษาปีที่ 6/1</p>
+
+<p>🏫 โรงเรียนพานทอง</p>
+
+<p>💙 Portfolio นักเรียน</p>
+
+<a href="profile.html">📖 ประวัติส่วนตัว</a>
+
+<footer>
+🌷 ยินดีต้อนรับสู่ Portfolio ของฉัน 🌷
+</footer>
+
+</div>
+
+<div class="flower">
+🌺 🌸 🌼 🌺 🌸
+</div>
+
+</body>
+</html>
