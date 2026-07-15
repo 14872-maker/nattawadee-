@@ -7,69 +7,140 @@
 
 <style>
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family:"TH Sarabun New",Tahoma,sans-serif;
-    background:linear-gradient(135deg,#66ccff,#99ddff,#dff6ff);
-    text-align:center;
 }
 
-/* ดอกไม้ด้านบน */
-.flower{
-    font-size:35px;
-    margin-top:20px;
+body{
+    background:linear-gradient(135deg,#74c9ff,#dff6ff,#9be7ff);
+    min-height:100vh;
+    overflow-x:hidden;
 }
 
+/* พื้นหลังตกแต่ง */
+body::before{
+    content:"";
+    position:fixed;
+    width:350px;
+    height:350px;
+    background:#ffffff55;
+    border-radius:50%;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#ffffff33;
+    border-radius:50%;
+    right:-120px;
+    bottom:-120px;
+}
+
+/* เมนู */
+nav{
+    width:100%;
+    background:#0077cc;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* กล่องหลัก */
 .card{
-    width:500px;
-    margin:30px auto;
-    background:white;
-    border-radius:25px;
-    padding:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    width:90%;
+    max-width:700px;
+    margin:50px auto;
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(10px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
 }
 
-img{
+/* รูป */
+.card img{
     width:220px;
     height:220px;
     object-fit:cover;
     border-radius:50%;
-    border:6px solid #4db8ff;
-    box-shadow:0 0 15px #66ccff;
+    border:6px solid white;
+    box-shadow:0 0 20px #0099ff;
+    transition:.5s;
+}
+
+.card img:hover{
+    transform:scale(1.08);
 }
 
 h1{
-    color:#0066cc;
-    margin-bottom:10px;
+    color:#005fa3;
+    margin-top:20px;
+    font-size:50px;
+}
+
+h2{
+    color:#0077cc;
+    margin-bottom:20px;
+    font-weight:normal;
 }
 
 p{
-    font-size:26px;
-    color:#444;
-    margin:8px;
+    font-size:30px;
+    margin:10px;
+    color:#333;
 }
 
-a{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
+/* ปุ่ม */
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.buttons a{
+    text-decoration:none;
     background:#0099ff;
     color:white;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:22px;
-    transition:0.3s;
+    padding:15px;
+    border-radius:50px;
+    font-size:28px;
+    transition:.3s;
 }
 
-a:hover{
-    background:#0066cc;
-    transform:scale(1.05);
+.buttons a:hover{
+    background:#005fa3;
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
 footer{
-    margin-top:25px;
-    color:#0066cc;
-    font-size:20px;
+    margin-top:35px;
+    color:#005fa3;
+    font-size:24px;
 }
 
 </style>
@@ -78,9 +149,14 @@ footer{
 
 <body>
 
-<div class="flower">
-🌸 🌺 🌼 🌸 🌺
-</div>
+<nav>
+    <a href="index.html">🏠 หน้าหลัก</a>
+    <a href="profile.html">👤 ประวัติส่วนตัว</a>
+    <a href="education.html">🎓 การศึกษา</a>
+    <a href="works.html">💼 ผลงาน</a>
+    <a href="certificate.html">🏆 เกียรติบัตร</a>
+    <a href="contact.html">📞 ติดต่อ</a>
+</nav>
 
 <div class="card">
 
@@ -88,22 +164,31 @@ footer{
 
 <h1>นางสาวณัฐวดี เอกภักดี</h1>
 
-<p>🎓 นักเรียนชั้นมัธยมศึกษาปีที่ 6/1</p>
+<h2>Portfolio นักเรียน</h2>
 
+<p>🎓 นักเรียนชั้นมัธยมศึกษาปีที่ 6/1</p>
 <p>🏫 โรงเรียนพานทอง</p>
 
-<p>💙 Portfolio นักเรียน</p>
+<div class="buttons">
 
-<a href="profile.html">📖 ประวัติส่วนตัว</a>
+<a href="profile.html">👤 ประวัติส่วนตัว</a>
 
-<footer>
-🌷 ยินดีต้อนรับสู่ Portfolio ของฉัน 🌷
-</footer>
+<a href="education.html">🎓 ประวัติการศึกษา</a>
+
+<a href="works.html">💼 ผลงาน</a>
+
+<a href="certificate.html">🏆 เกียรติบัตร</a>
+
+<a href="contact.html">📞 ติดต่อ</a>
+
+<a href="index.html">🏠 หน้าหลัก</a>
 
 </div>
 
-<div class="flower">
-🌺 🌸 🌼 🌺 🌸
+<footer>
+🌸 ยินดีต้อนรับสู่ Portfolio ของฉัน 🌸
+</footer>
+
 </div>
 
 </body>
