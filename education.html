@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Portfolio | ประวัติการศึกษา</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"TH Sarabun New",Tahoma,sans-serif;
+    background:linear-gradient(135deg,#66ccff,#b3e5fc,#e3f7ff);
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.title{
+    text-align:center;
+    color:#0066cc;
+    margin-bottom:40px;
+}
+
+.title h1{
+    font-size:58px;
+}
+
+.title p{
+    font-size:28px;
+    color:#555;
+}
+
+.timeline{
+    position:relative;
+    margin:40px auto;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:6px;
+    height:100%;
+    background:#42a5f5;
+    border-radius:10px;
+}
+
+.card{
+    position:relative;
+    background:white;
+    margin:30px 0 30px 70px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    left:-57px;
+    top:28px;
+    width:22px;
+    height:22px;
+    background:#2196f3;
+    border:5px solid white;
+    border-radius:50%;
+}
+
+.card h2{
+    color:#0066cc;
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.school{
+    color:#0088cc;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.year{
+    color:#666;
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    font-size:28px;
+    margin:8px 0;
+    color:#333;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.buttons a{
+    text-decoration:none;
+    background:linear-gradient(90deg,#0099ff,#0066cc);
+    color:white;
+    padding:14px 35px;
+    border-radius:50px;
+    font-size:28px;
+    transition:.3s;
+    box-shadow:0 8px 15px rgba(0,0,0,.2);
+}
+
+.buttons a:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    color:#0066cc;
+    font-size:24px;
+    margin:35px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">
+<h1>🎓 ประวัติการศึกษา</h1>
+<p>Educational Background</p>
+</div>
+
+<div class="timeline">
+
+<div class="card">
+
+<h2>🌼 ระดับอนุบาล</h2>
+
+<div class="school">
+โรงเรียนเชื้อจรูญวิทย์
+</div>
+
+<div class="year">
+พ.ศ. 2555 – 2557
+</div>
+
+<ul>
+<li>สำเร็จการศึกษาระดับอนุบาล</li>
+<li>เข้าร่วมกิจกรรมส่งเสริมพัฒนาการและกิจกรรมของโรงเรียน</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📚 ระดับประถมศึกษา</h2>
+
+<div class="school">
+โรงเรียนศรีอรุณวิทย์เสลภูมิ
+</div>
+
+<div class="year">
+พ.ศ. 2558 – 2563
+</div>
+
+<ul>
+<li>สำเร็จการศึกษาระดับประถมศึกษาปีที่ 6</li>
+<li>เข้าร่วมกิจกรรมวิชาการ กีฬาสี และกิจกรรมจิตอาสา</li>
+<li>มีผลการเรียนและความประพฤติดี</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🏫 ระดับมัธยมศึกษาตอนต้น</h2>
+
+<div class="school">
+โรงเรียนพานทอง
+</div>
+
+<div class="year">
+พ.ศ. 2564 – 2566
+</div>
+
+<ul>
+<li>สำเร็จการศึกษาระดับมัธยมศึกษาปีที่ 3</li>
+<li>เข้าร่วมกิจกรรมของโรงเรียนและกิจกรรมพัฒนาผู้เรียน</li>
+<li>พัฒนาทักษะด้านการทำงานเป็นทีม ความรับผิดชอบ และภาวะผู้นำ</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🎓 ระดับมัธยมศึกษาตอนปลาย</h2>
+
+<div class="school">
+โรงเรียนพานทอง
+</div>
+
+<div class="year">
+พ.ศ. 2567 – 2569 (กำลังศึกษา)
+</div>
+
+<ul>
+<li>กำลังศึกษาระดับมัธยมศึกษาปีที่ 6</li>
+<li>แผนการเรียน : คณิตศาสตร์ – วิทยาศาสตร์</li>
+<li>เกรดเฉลี่ยสะสม (GPAX) 4 ภาคเรียน : <strong>3.71</strong></li>
+<li>เข้าร่วมกิจกรรมวิชาการ กิจกรรมจิตอาสา และกิจกรรมของโรงเรียนอย่างสม่ำเสมอ</li>
+<li>มุ่งมั่นพัฒนาตนเอง มีความรับผิดชอบ และพร้อมเรียนรู้สิ่งใหม่อยู่เสมอ</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a href="profile.html">⬅ ย้อนกลับ</a>
+
+<a href="activities.html">ถัดไป ➜</a>
+
+</div>
+
+<footer>
+
+💙 Portfolio | ณัฐวดี เอกภักดี 💙
+
+</footer>
+
+</div>
+
+</body>
+</html>
