@@ -3,30 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | นางสาวณัฐวดี เอกภักดี</title>
+<title>Portfolio | ณัฐวดี เอกภักดี</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <style>
 
-body{
+*{
     margin:0;
-    font-family:"TH Sarabun New",Tahoma,sans-serif;
-    background:linear-gradient(135deg,#66ccff,#99ddff,#dff6ff);
-    text-align:center;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* ดอกไม้ด้านบน */
-.flower{
-    font-size:35px;
-    margin-top:20px;
+body{
+    font-family:"TH Sarabun New",Tahoma,sans-serif;
+    background:linear-gradient(135deg,#66ccff,#9fdcff,#dff6ff);
+    overflow-x:hidden;
+}
+
+/* พื้นหลัง */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle,#ffffff55 2px,transparent 2px);
+    background-size:40px 40px;
+    z-index:-1;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
 }
 
 .card{
-    width:500px;
-    margin:30px auto;
-    background:white;
-    border-radius:25px;
-    padding:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    width:750px;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(10px);
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    padding:40px;
+    text-align:center;
+    animation:fade 1s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.flower{
+    font-size:38px;
+    margin-bottom:15px;
 }
 
 img{
@@ -34,42 +74,69 @@ img{
     height:220px;
     object-fit:cover;
     border-radius:50%;
-    border:6px solid #4db8ff;
-    box-shadow:0 0 15px #66ccff;
+    border:8px solid #42a5f5;
+    box-shadow:0 0 25px #7ec8ff;
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05);
 }
 
 h1{
     color:#0066cc;
-    margin-bottom:10px;
-}
-
-p{
-    font-size:26px;
-    color:#444;
-    margin:8px;
-}
-
-a{
-    display:inline-block;
     margin-top:20px;
-    padding:12px 25px;
-    background:#0099ff;
+    font-size:48px;
+}
+
+h2{
+    color:#0088cc;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.info{
+    text-align:left;
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+}
+
+.info p{
+    font-size:28px;
+    margin:12px 0;
+    color:#333;
+    border-bottom:1px dashed #99cfff;
+    padding-bottom:6px;
+}
+
+.highlight{
+    color:#0066cc;
+    font-weight:bold;
+}
+
+.button{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    background:linear-gradient(90deg,#0099ff,#0066cc);
     color:white;
     text-decoration:none;
-    border-radius:30px;
-    font-size:22px;
-    transition:0.3s;
+    font-size:28px;
+    border-radius:50px;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
-a:hover{
-    background:#0066cc;
-    transform:scale(1.05);
+.button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 25px rgba(0,0,0,.3);
 }
 
 footer{
-    margin-top:25px;
+    margin-top:30px;
+    font-size:24px;
     color:#0066cc;
-    font-size:20px;
 }
 
 </style>
@@ -78,32 +145,53 @@ footer{
 
 <body>
 
-<div class="flower">
-🌸 🌺 🌼 🌸 🌺
-</div>
+<div class="container">
 
 <div class="card">
 
+<div class="flower">
+🌸 🌺 🌼 🌷 🌸
+</div>
+
 <img src="images/ตู้เสื้อผ้า 2.jpg" alt="รูปภาพ">
 
-<h1>นางสาวณัฐวดี เอกภักดี</h1>
+<h1>ณัฐวดี เอกภักดี</h1>
+<h2>Portfolio นักเรียน</h2>
 
-<p>🎓 นักเรียนชั้นมัธยมศึกษาปีที่ 6/1</p>
+<div class="info">
 
-<p>🏫 โรงเรียนพานทอง</p>
+<p>👩 <span class="highlight">ชื่อ-นามสกุล :</span> ณัฐวดี เอกภักดี</p>
 
-<p>💙 Portfolio นักเรียน</p>
+<p>🌷 <span class="highlight">ชื่อเล่น :</span> มิ้นท์</p>
 
-<a href="profile.html">📖 ประวัติส่วนตัว</a>
+<p>🎂 <span class="highlight">วันเกิด :</span> 24 กันยายน 2551</p>
+
+<p>🎈 <span class="highlight">อายุ :</span> 17 ปี</p>
+
+<p>🏫 <span class="highlight">โรงเรียน :</span> โรงเรียนพานทอง</p>
+
+<p>📚 <span class="highlight">แผนการเรียน :</span> วิทยาศาสตร์ - คณิตศาสตร์</p>
+
+<p>🎵 <span class="highlight">งานอดิเรก :</span> อ่านหนังสือ • ฟังเพลง • วิ่ง</p>
+
+<p>⭐ <span class="highlight">ความสามารถพิเศษ :</span><br>
+✔ ใช้ภาษาไทยได้ถูกต้อง<br>
+✔ งานฝีมือ<br>
+✔ วาทศิลป์
+</p>
+
+</div>
+
+<a href="profile.html" class="button">
+➡ หน้าถัดไป
+</a>
 
 <footer>
-🌷 ยินดีต้อนรับสู่ Portfolio ของฉัน 🌷
+💙 ยินดีต้อนรับสู่ Portfolio ของฉัน 💙
 </footer>
 
 </div>
 
-<div class="flower">
-🌺 🌸 🌼 🌺 🌸
 </div>
 
 </body>
